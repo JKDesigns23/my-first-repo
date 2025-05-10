@@ -81,6 +81,20 @@
         }
     </style>
 </head>
+    <script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true,
+        });
+    });
+</script>
 <body>
     <header class="hero">
         <h1>Welcome to My Portfolio</h1>
