@@ -74,24 +74,24 @@ p {
 /* Overlay Text Styling */
 .overlay-text {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
-    color: #ffffff;
-    padding: 20px;
+    bottom: 20px;
+    left: 20px;
+    color: #000000; /* Black text */
+    background-color: rgba(255, 215, 0, 0.8); /* Gold background */
+    padding: 20px 30px; /* Larger padding for a more balanced look */
+    border-radius: 10px;
     font-family: Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 30px; /* Larger font size */
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    letter-spacing: 1.5px;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.carousel-item:hover .overlay-text {
-    opacity: 1;
+.overlay-text:hover {
+    background-color: rgba(255, 215, 0, 0.9); /* Slightly darker gold on hover */
 }
+
 
 
 .overlay-text h2 {
