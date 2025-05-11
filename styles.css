@@ -1,3 +1,4 @@
+/* Body Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -6,6 +7,7 @@ body {
     padding: 0;
 }
 
+/* Hero Section */
 .hero {
     background-image: url('https://via.placeholder.com/1600x600');
     background-size: cover;
@@ -28,6 +30,7 @@ body {
     font-size: 1.5em;
 }
 
+/* Container Styles */
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -37,6 +40,7 @@ body {
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
+/* Section Headings */
 h2 {
     color: #0066cc;
     text-align: center;
@@ -48,6 +52,7 @@ p {
     font-size: 18px;
     margin-bottom: 20px;
 }
+
 /* Carousel Styles */
 .carousel {
     position: relative;
@@ -60,6 +65,7 @@ p {
     position: relative;
 }
 
+/* Image Styles */
 .carousel img {
     width: 100%;
     display: block;
@@ -71,78 +77,50 @@ p {
     transform: scale(1.05);
 }
 
-/* Overlay Text Styling */
+/* Overlay Text Styles */
 .overlay-text {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(218, 165, 32, 0.8); /* Gold with 80% opacity */
-    color: #000000; /* Black text */
-    padding: 10px 20px;
+    background-color: rgba(218, 165, 32, 0.9); /* Gold Background */
+    color: #000000; /* Black Text */
+    padding: 15px 30px;
     border-radius: 5px;
     font-family: Arial, sans-serif;
-    font-size: 24px;
+    font-size: 28px; /* Larger Font */
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: opacity 0.3s ease-in-out;
-    opacity: 0; /* Start hidden */
+    opacity: 0; /* Hidden by default */
 }
 
-.carousel-item:hover .overlay-text {
-    opacity: 1; /* Fully visible on hover */
-}
-
-
-
-
-.overlay-text h2 {
-    font-size: 1.8em;
-    margin: 0 0 5px 0;
-}
-
-.overlay-text p {
-    font-size: 1em;
-    margin: 0;
-    font-weight: 400;
-}
-
+/* Overlay Text Hover */
 .carousel-item:hover .overlay-text {
     opacity: 1;
 }
 
-
 /* Overlay Headings */
 .overlay-text h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 0;
 }
 
 /* Overlay Paragraph */
 .overlay-text p {
-    font-size: 0.9em;
-    margin: 5px 0 0 0;
-    font-weight: 400;
-}
-
-
-
-.overlay-text h2 {
-    font-size: 1.5em;
-    margin: 0;
-}
-
-.overlay-text p {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 5px 0 0;
-}
-
-.carousel-item:hover .overlay-text {
-    opacity: 1;
+    font-weight: 400;
 }
 
 /* Dot Navigation */
 .slick-dots li button:before {
     color: #ffffff !important;
     font-size: 12px;
+}
+
+/* Remove unwanted "Project 1" text */
+.carousel-item h2,
+.carousel-item p {
+    display: none;
 }
