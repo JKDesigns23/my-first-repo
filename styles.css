@@ -74,20 +74,25 @@ p {
 /* Overlay Text Styling */
 .overlay-text {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 20px;
     font-family: Arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    text-transform: none;
-    letter-spacing: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
+
+.carousel-item:hover .overlay-text {
+    opacity: 1;
+}
+
 
 .overlay-text h2 {
     font-size: 1.8em;
