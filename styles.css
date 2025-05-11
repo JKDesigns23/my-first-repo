@@ -76,20 +76,22 @@ p {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: #000000; /* Black text */
-    background-color: rgba(255, 215, 0, 0.8); /* Gold background */
-    padding: 20px 30px; /* Larger padding for a more balanced look */
-    border-radius: 10px;
+    color: #000000;
+    background-color: #d4af37; /* Gold background */
+    padding: 15px 30px;
+    border-radius: 5px;
     font-family: Arial, sans-serif;
-    font-size: 30px; /* Larger font size */
-    font-weight: bold;
+    font-size: 24px; /* Larger text */
+    font-weight: 700;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    transition: background-color 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; /* Hidden by default */
 }
 
-.overlay-text:hover {
-    background-color: rgba(255, 215, 0, 0.9); /* Slightly darker gold on hover */
+/* Show on hover */
+.carousel-item:hover .overlay-text {
+    opacity: 1;
 }
 
 
