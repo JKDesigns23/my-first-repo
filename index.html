@@ -14,37 +14,23 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
    
-    <script>
-    $(document).ready(function(){
-        $('.carousel').slick({
-            dots: true,
-            infinite: true,
-            speed: 800,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            fade: true,
-            arrows: true,
-        });
+<script>
+$(document).ready(function(){
+    $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        fade: true,
+        arrows: false,
+        pauseOnHover: true,
     });
+});
 </script>
 
-    <script>
-        $(document).ready(function(){
-            $('.carousel').slick({
-                dots: true,
-                infinite: true,
-                speed: 500,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                arrows: true,
-                pauseOnHover: true,
-            });
-        });
-    </script>
 </head>
 <body>
     <header class="hero">
