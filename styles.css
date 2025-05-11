@@ -48,3 +48,44 @@ p {
     font-size: 18px;
     margin-bottom: 20px;
 }
+/* Carousel Styles */
+.carousel {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.slick-dots {
+    bottom: 20px;
+}
+
+.slick-dots li button:before {
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #007aff;
+    opacity: 1;
+}
